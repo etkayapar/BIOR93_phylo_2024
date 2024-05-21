@@ -1,15 +1,19 @@
 
-# **BIOR93 Applied Bioinformatics - Phylogenetics Module**
+# **BIOR93 Applied Bioinformatics - Phylogenetics Module 5**
 
 Teachers Jadranka Rota and Etka Yapar
 
 ## **Introduction**
 
-In this course we will learn in practice how to download data from GenBank, create a multigene dataset, analyse the dataset using maximum likelihood and Bayesian methods, as well as multispecies coalescent methods, and how to manipulate trees for publication.
+In this module we will learn in practice how to download data from GenBank, create a multigene dataset, analyse the dataset using Maximum likelihood and Bayesian methods, as well as multispecies coalescent methods, and how to manipulate trees for publication.
+
+We will use mitochondiral genomes from cats (Felidae) as our dataset. First you will download the DNA sequence data from GenBank (Tutorial 1) and learn how to align it (Tutorial 2). Then you will select the best model of DNA subsitution for your data (Tutorial 3). This will be followed by setting up a Bayesian phylogenetic inference analysis (Tutorial 4) and Maximum Likelihood analysis (Tutorial 5). The final analysis will be focused on using a multispecies coalescent approach in Astral IV (Tutorial 6). Finally, you will learn how to manipulate phylogenetic trees in FigTree (Tutorial 7).
+
+Then you will need to apply some of the skills you acquired to complete the course assignment, which is graded on the pass/fail scale.
 
 ## **Program**
 
-**Location:** Computer lab (D226), Biologihuset, Lund University, Sölvegatan 35, 223 62 Lund
+**Location:** Computer lab (D226), Biologihuset D, Lund University, Sölvegatan 35, 223 62 Lund
 
 
 | Hours\Days  | Tuesday May 21                                           | Wednesday May 22                                   | Friday May 24                                                          |
@@ -38,7 +42,7 @@ Here you will find the files we create during the course. (If at some point you 
 
 ### [Tutorials](./Tutorials/)
 
-Here are deposited the instructions for the assignments and exercises.
+Here are deposited the instructions for the exercises and the module assignment.
 
 
  (1) [Learn to generate datasets](./Tutorials/DatasetManipulation/)
@@ -77,5 +81,5 @@ Here you can find a list of the programs we are going to use and links to where 
 
  * [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.1)
  
- * [ASTRAL](https://github.com/smirarab/ASTRAL)
+ * [ASTER - ASTRAL IV](https://github.com/chaoszhang/ASTER)
 
