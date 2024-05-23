@@ -1,0 +1,208 @@
+IQ-TREE 2.2.0 COVID-edition built Jun  1 2022
+
+Partition file name: Gene_partitions.txt
+Input file name: ATP6_COI_CytB_ND5.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 398158
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 54 taxa with 2 partitions and 5187 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	54	2226	902	822	1316	1316	ATP6+COI
+   2	DNA	54	2961	1309	1206	1559	1559	CYTB+ND5
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4:ATP6+COI,GTR+F+I+G4:CYTB+ND5
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+I+G4       -22604.757   45231.515 + 6.95e-310   45231.634 +        0   45294.303 + 6.48e-314
+   2  GTR+F+I+G4       -31634.994   63291.987 + 6.95e-310   63292.077 +        0   63357.913 + 6.48e-314
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+I+G4     0.9798  GTR{2.56992,92.776,3.14856,0.940936,94.0427}+F{0.278106,0.24926,0.162191,0.310443}+I{0.578189}+G4{1.84753}
+   2  GTR+F+I+G4     1.0152  GTR{3.76586,89.3087,3.19017,0.805067,91.8425}+F{0.307852,0.292369,0.124378,0.275401}+I{0.482407}+G4{1.20977}
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -54239.5742 (s.e. 802.7944)
+Unconstrained log-likelihood (without tree): -23930.0480
+Number of free parameters (#branches + #model parameters): 126
+Akaike information criterion (AIC) score: 108731.1483
+Corrected Akaike information criterion (AICc) score: 108737.4732
+Bayesian information criterion (BIC) score: 109556.9411
+
+Total tree length (sum of branch lengths): 3.6990
+Sum of internal branch lengths: 1.5749 (42.5774% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'U20753_Felis_catus' is drawn at root
+
++--U20753_Felis_catus
+|
+|                                                                          +---AY873843_Herpestes_javanicus
+|                                                                       +--|
+|                                                                       |  +---KY117547_Herpestes_brachyurus_hosei
+|                                                                    +--|
+|                                                                    |  +------MW257235_Xenogale_naso
+|                                               +--------------------|
+|                                               |                    +------MW019668_Herpestes_ichneumon
+|                             +-----------------|
+|                             |                 +-----------------------JF894376_Hyaena_hyaena
+|                          +--|
+|                          |  |              +--JF357970_Panthera_tigris_sumatrae
+|                          |  |           +--|
+|                          |  |           |  |  +--KJ508413_Panthera_tigris
+|                          |  |           |  +--|
+|                          |  |           |     +--MH124079_Panthera_tigris_altaica
+|                          |  |     +-----|
+|                          |  |     |     +--F357972_Panthera_tigris_corbetti
+|                          |  |  +--|
+|                          |  |  |  |                 +--KC834784_Panthera_leo_persica
+|                          |  |  |  |              +--|
+|                          |  |  |  |              |  |  +**KP001494_Panthera_leo
+|                          |  |  |  |              |  +--|
+|                          |  |  |  |              |     +**KP001495_Panthera_leo_Ethiopia
+|                          |  |  |  |           +--|
+|                          |  |  |  |           |  +--KU234271_Panthera_leo_persica
+|                          |  |  |  |        +--|
+|                          |  |  |  |        |  |  +--KX258451_Panthera_spelaea
+|                          |  |  |  |        |  +--|
+|                          |  |  |  |        |     +--KX258452_Panthera_spelaea
+|                          |  |  |  |     +--|
+|                          |  |  |  |     |  |  +--KJ866876_Panthera_pardus_japonensis
+|                          |  |  |  |     |  +--|
+|                          |  |  |  |     |     +--KP001507_Panthera_pardus
+|                          |  |  |  |  +--|
+|                          |  |  |  |  |  +---KP202269_Panthera_uncia
+|                          |  |  |  +--|
+|                          |  |  |     |  +--KF483864_Panthera_onca
+|                          |  |  |     +--|
+|                          |  |  |        +--KM236783_Panthera_onca
+|                          |  +--|
+|                          |     +-------KP202291_Neofelis_nebulosa
+|                       +--|
+|                       |  |        +--KP202282_Leopardus_colocola
+|                       |  |     +--|
+|                       |  |     |  +**KP202288_Leopardus_tigrinus
+|                       |  |  +--|
+|                       |  |  |  |     +--KP202284_Leopardus_pardalis
+|                       |  |  |  |  +--|
+|                       |  |  |  |  |  +--KP202289_Leopardus_wiedii
+|                       |  |  |  +--|
+|                       |  |  |     +--KP202294_Leopardus_jacobita
+|                       |  +--|
+|                       |     |  +--KP202287_Leopardus_tigrinus
+|                       |     +--|
+|                       |        |  +--KP202292_Leopardus_geoffroyi
+|                       |        +--|
+|                       |           +--KP202293_Leopardus_guigna
+|                    +--|
+|                    |  |              +----KP202261_Puma_concolor
+|                    |  |           +--|
+|                    |  |           |  +----KP202279_Puma_yagouaroundi
+|                    |  |        +--|
+|                    |  |        |  +-----KP202271_Acinonyx_jubatus
+|                    |  |     +--|
+|                    |  |     |  |  +---KP271500_Catopuma_temminckii
+|                    |  |     |  +--|
+|                    |  |     |     +--KX265095_Catopuma_badia
+|                    |  |  +--|
+|                    |  |  |  |     +--KP202263_Pardofelis_marmorata
+|                    |  |  |  +-----|
+|                    |  |  |        +--KT288227_Pardofelis_marmorata
+|                    |  +--|
+|                    |     |  +---KP202285_Lynx_rufus
+|                    |     +--|
+|                    |        |  +--KR132581_Lynx_lynx
+|                    |        +--|
+|                    |           |  +--KX911367_Lynx_pardinus
+|                    |           +--|
+|                    |              +--CM017348_Lynx_canadensis
+|                 +--|
+|                 |  |     +----KP202272_Caracal_caracal
+|                 |  |  +--|
+|                 |  |  |  +---NC_028299_Profelis_aurata
+|                 |  +--|
+|                 |     +-----KP202286_Leptailurus_serval
+|              +--|
+|              |  |        +--HM185183_Prionailurus_bengalensis
+|              |  |     +--|
+|              |  |     |  +--KR135742_Prionailurus_viverrinus
+|              |  |  +--|
+|              |  |  |  +--KR135743_Prionailurus_planiceps
+|              |  +--|
+|              |     +--KR135744_Prionailurus_rubiginosus
+|           +--|
+|           |  +-----KP202295_Otocolobus_manul
+|        +--|
+|        |  +--NC_028307_Felis_chaus
+|     +--|
+|     |  +---KP202277_Felis_nigripes
+|  +--|
+|  |  +--KR132580_Felis_margarita
++--|
+|  +--KP202273_Felis_silvestris_bieti
+|
++--KP202275_Felis_silvestris_lybica
+
+Tree in newick format:
+
+(U20753_Felis_catus:0.0047518821,((((((((((((((AY873843_Herpestes_javanicus:0.0598359866,KY117547_Herpestes_brachyurus_hosei:0.0593647295):0.0416423880,MW257235_Xenogale_naso:0.0988894467):0.0117911197,MW019668_Herpestes_ichneumon:0.0993382693):0.2730307362,JF894376_Hyaena_hyaena:0.3119726223):0.2440854248,((((JF357970_Panthera_tigris_sumatrae:0.0015655846,(KJ508413_Panthera_tigris:0.0014348501,MH124079_Panthera_tigris_altaica:0.0021628265):0.0006148470):0.0016959863,F357972_Panthera_tigris_corbetti:0.0009653222):0.0858919267,((((((KC834784_Panthera_leo_persica:0.0024802590,(KP001494_Panthera_leo:0.0001898876,KP001495_Panthera_leo_Ethiopia:0.0001882844):0.0011464417):0.0026032593,KU234271_Panthera_leo_persica:0.0041898510):0.0150720590,(KX258451_Panthera_spelaea:0.0065382652,KX258452_Panthera_spelaea:0.0027119473):0.0190848375):0.0243322850,(KJ866876_Panthera_pardus_japonensis:0.0036661819,KP001507_Panthera_pardus:0.0086869319):0.0369271834):0.0102789769,KP202269_Panthera_uncia:0.0565511920):0.0081677819,(KF483864_Panthera_onca:0.0045857262,KM236783_Panthera_onca:0.0132050688):0.0488355973):0.0137516576):0.0236346689,KP202291_Neofelis_nebulosa:0.1139363214):0.0475525936):0.0311663248,(((KP202282_Leopardus_colocola:0.0015536648,KP202288_Leopardus_tigrinus:0.0000023190):0.0519422319,((KP202284_Leopardus_pardalis:0.0297857810,KP202289_Leopardus_wiedii:0.0257267983):0.0221524606,KP202294_Leopardus_jacobita:0.0514831356):0.0020229261):0.0056697926,(KP202287_Leopardus_tigrinus:0.0370125853,(KP202292_Leopardus_geoffroyi:0.0212671663,KP202293_Leopardus_guigna:0.0154548760):0.0218955785):0.0192665994):0.0436644809):0.0160026034,(((((KP202261_Puma_concolor:0.0706648021,KP202279_Puma_yagouaroundi:0.0721128716):0.0102446144,KP202271_Acinonyx_jubatus:0.0842795859):0.0166966712,(KP271500_Catopuma_temminckii:0.0544075986,KX265095_Catopuma_badia:0.0477731283):0.0381701077):0.0037917720,(KP202263_Pardofelis_marmorata:0.0318276772,KT288227_Pardofelis_marmorata:0.0224732073):0.0872295259):0.0015071940,(KP202285_Lynx_rufus:0.0592923608,(KR132581_Lynx_lynx:0.0226525733,(KX911367_Lynx_pardinus:0.0257289147,CM017348_Lynx_canadensis:0.0217092315):0.0032194573):0.0375228030):0.0245105146):0.0118559655):0.0038764817,((KP202272_Caracal_caracal:0.0693372889,NC_028299_Profelis_aurata:0.0610119996):0.0336312704,KP202286_Leptailurus_serval:0.0887081312):0.0195193328):0.0065517665,(((HM185183_Prionailurus_bengalensis:0.0172919328,KR135742_Prionailurus_viverrinus:0.0248460082):0.0203491063,KR135743_Prionailurus_planiceps:0.0507247669):0.0161041083,KR135744_Prionailurus_rubiginosus:0.0468850073):0.0243402716):0.0090209401,KP202295_Otocolobus_manul:0.0859939661):0.0383879731,NC_028307_Felis_chaus:0.0467932585):0.0058181769,KP202277_Felis_nigripes:0.0559083846):0.0337067375,KR132580_Felis_margarita:0.0143531586):0.0029270092,KP202273_Felis_silvestris_bieti:0.0068501773):0.0020165365,KP202275_Felis_silvestris_lybica:0.0029148845);
+
+TIME STAMP
+----------
+
+Date and time: Thu Apr 25 12:09:23 2024
+Total CPU time used: 0.66571 seconds (0h:0m:0s)
+Total wall-clock time used: 0.670297 seconds (0h:0m:0s)
+

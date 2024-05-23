@@ -1,0 +1,199 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Mac OS X 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    BIOLC02J60W0Q6LR (SSE4.2, 16 GB RAM)
+Command: ./iqtree2 -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m TESTMERGEONLY --prefix first
+Seed:    783635 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 25 12:04:28 2024
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file Gene_partitions.txt ...
+Reading alignment file ATP6_COI_CytB_ND5.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.010684 secs using 62.96% CPU
+Alignment has 54 sequences with 5187 columns, 2163 distinct patterns
+2028 parsimony-informative, 284 singleton sites, 2875 constant sites
+                                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000356913 secs using 86.58% CPU
+   1  U20753_Felis_catus                     0.00%    passed     97.87%
+   2  AY873843_Herpestes_javanicus           0.06%    passed     19.73%
+   3  HM185183_Prionailurus_bengalensis      0.04%    passed     57.79%
+   4  JF894376_Hyaena_hyaena                 0.00%    passed      8.34%
+   5  JF357970_Panthera_tigris_sumatrae      0.00%    passed     11.73%
+   6  F357972_Panthera_tigris_corbetti       0.89%    passed     16.69%
+   7  KC834784_Panthera_leo_persica          0.00%    passed     63.98%
+   8  KF483864_Panthera_onca                 0.00%    passed     67.68%
+   9  KJ866876_Panthera_pardus_japonensis    0.00%    passed     39.06%
+  10  KM236783_Panthera_onca                 0.00%    passed     53.15%
+  11  KJ508413_Panthera_tigris               0.00%    passed     16.21%
+  12  KP001494_Panthera_leo                  0.25%    passed     66.27%
+  13  KP001495_Panthera_leo_Ethiopia         0.13%    passed     65.48%
+  14  KP001507_Panthera_pardus               0.00%    passed     53.94%
+  15  KP202261_Puma_concolor                 0.00%    passed     82.74%
+  16  KP202263_Pardofelis_marmorata          0.00%    passed     90.77%
+  17  KP202269_Panthera_uncia                0.00%    passed     41.37%
+  18  KP202271_Acinonyx_jubatus              0.00%    passed     26.56%
+  19  KP202272_Caracal_caracal               0.00%    passed     41.72%
+  20  KP202273_Felis_silvestris_bieti        0.00%    passed     95.70%
+  21  KP202275_Felis_silvestris_lybica       0.00%    passed     99.02%
+  22  KP202277_Felis_nigripes                0.00%    passed     93.98%
+  23  KP202279_Puma_yagouaroundi             0.00%    passed     55.86%
+  24  KP202282_Leopardus_colocola            0.00%    passed     27.54%
+  25  KP202284_Leopardus_pardalis            0.00%    passed     72.04%
+  26  KP202285_Lynx_rufus                    0.00%    passed     57.12%
+  27  KP202286_Leptailurus_serval            0.00%    failed      3.26%
+  28  KP202287_Leopardus_tigrinus            0.00%    passed     49.37%
+  29  KP202288_Leopardus_tigrinus            0.00%    passed     31.04%
+  30  KP202289_Leopardus_wiedii              0.00%    passed     60.83%
+  31  KP202291_Neofelis_nebulosa             0.00%    passed     15.92%
+  32  KP202292_Leopardus_geoffroyi           0.00%    passed     88.43%
+  33  KP202293_Leopardus_guigna              0.00%    passed     70.53%
+  34  KP202294_Leopardus_jacobita            0.00%    passed     66.41%
+  35  KP202295_Otocolobus_manul              0.00%    passed     17.14%
+  36  KP271500_Catopuma_temminckii           0.00%    passed     96.18%
+  37  KR132580_Felis_margarita               0.91%    passed     99.85%
+  38  KR132581_Lynx_lynx                     0.00%    passed     17.52%
+  39  KR135742_Prionailurus_viverrinus       0.04%    passed     96.36%
+  40  KR135743_Prionailurus_planiceps        0.00%    passed     87.44%
+  41  KR135744_Prionailurus_rubiginosus      0.15%    passed     87.08%
+  42  NC_028299_Profelis_aurata              0.00%    passed     28.83%
+  43  NC_028307_Felis_chaus                  0.00%    passed     56.11%
+  44  KX258451_Panthera_spelaea              0.04%    passed     13.27%
+  45  KX258452_Panthera_spelaea              0.10%    passed     24.22%
+  46  KU234271_Panthera_leo_persica          0.00%    passed     49.59%
+  47  KX265095_Catopuma_badia                0.00%    passed     46.73%
+  48  KY117547_Herpestes_brachyurus_hosei    0.00%    passed      7.45%
+  49  KX911367_Lynx_pardinus                 0.00%    passed     73.09%
+  50  KT288227_Pardofelis_marmorata          0.00%    passed     92.39%
+  51  MH124079_Panthera_tigris_altaica       0.00%    passed     19.10%
+  52  CM017348_Lynx_canadensis               0.00%    passed     29.50%
+  53  MW019668_Herpestes_ichneumon           0.46%    failed      0.47%
+  54  MW257235_Xenogale_naso                 0.00%    passed      7.09%
+****  TOTAL                                  0.06%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	54	681	276	361	GTR	ATP6
+2	DNA	54	1545	546	955	GTR	COI
+3	DNA	54	1140	456	623	GTR	CYTB
+4	DNA	54	1821	750	936	GTR	ND5
+Degree of missing data: 0.000
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.016 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -65234.341
+Current log-likelihood at step 1: -54914.818
+Current log-likelihood at step 2: -54450.105
+Current log-likelihood at step 3: -54443.483
+Current log-likelihood at step 4: -54439.357
+Parameters optimization took 3 rounds (2.303 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.630576 secs using 99.83% CPU
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -54352.433
+Current log-likelihood at step 1: -54346.835
+Current log-likelihood at step 2: -54339.630
+Current log-likelihood at step 3: -54329.706
+Current log-likelihood at step 4: -54314.902
+Current log-likelihood at step 5: -54289.870
+Current log-likelihood at step 6: -54251.895
+Current log-likelihood at step 7: -54243.836
+Current log-likelihood at step 8: -54239.870
+Current log-likelihood at step 9: -54234.867
+Current log-likelihood at step 10: -54228.543
+Current log-likelihood at step 11: -54221.198
+Current log-likelihood at step 12: -54215.718
+Current log-likelihood at step 13: -54213.615
+Current log-likelihood at step 14: -54212.508
+Current log-likelihood at step 15: -54211.405
+Current log-likelihood at step 16: -54210.297
+Current log-likelihood at step 17: -54209.116
+Current log-likelihood at step 18: -54207.932
+Current log-likelihood at step 19: -54206.785
+Current log-likelihood at step 20: -54205.723
+Current log-likelihood at step 21: -54204.867
+Partition-specific rates:  0.984 0.938 1.062 1.019
+Parameters optimization took 20 rounds (7.531 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 10.479 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+Selecting individual models for 4 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 GTR+F+I+G4   15185.566   4.195       ATP6
+   2 GTR+F+I+G4   30106.394   3.406       COI
+   3 GTR+F+I+G4   24571.186   3.854       CYTB
+   4 GTR+F+I+G4   38827.778   3.726       ND5
+Full partition model BIC score: 109644.367 (LnL: -54189.194  df:148)
+Merging models to increase model fit (about 13 total partition schemes)...
+   5 GTR+F+I+G4   109620.728  3.637       ATP6+COI
+   6 GTR+F+I+G4   109587.218  3.957       ATP6+CYTB
+   7 GTR+F+I+G4   109584.464  3.845       ATP6+ND5
+   8 GTR+F+I+G4   109718.902  3.495       COI+CYTB
+   9 GTR+F+I+G4   109773.390  3.511       COI+ND5
+  10 GTR+F+I+G4   109581.030  3.767       CYTB+ND5	0h:0m:8s (0h:0m:2s left)
+2 compatible better partition pairs found
+Merging CYTB+ND5 with BIC score: 109581.030 (LnL: -54204.572  df: 137)
+Merging ATP6+COI with BIC score: 109557.391 (LnL: -54239.799  df: 126)
+  11 GTR+F+I+G4   109671.668  3.657       ATP6+COI+CYTB+ND5	0h:0m:10s (0h:0m:1s left)
+Agglomerative model selection: ((ATP6,COI)2:109557,(CYTB,ND5)1:109581)
+Merging into 2 partitions...
+  12 TPM2u+F+I+G4 45272.866   ATP6+COI	0h:0m:16s (0h:0m:1s left)
+  13 TPM2u+F+I+G4 63335.526   CYTB+ND5	0h:0m:32s (0h:0m:0s left)
+Best partition model BIC score: 109509.251 (LnL: -54241.391  df:120)
+Partition information was printed to first.best_scheme.nex
+Partition information in Raxml format was printed to first.best_scheme
+
+All model information printed to first.model.gz
+CPU time for ModelFinder: 42.731 seconds (0h:0m:42s)
+Wall-clock time for ModelFinder: 42.861 seconds (0h:0m:42s)
+
+NOTE: 15 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -54241.391
+Current log-likelihood at step 1: -54241.164
+Current log-likelihood at step 2: -54241.161
+Partition-specific rates:  0.980 1.015
+Parameters optimization took 1 rounds (0.352 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Partition information was printed to first.best_model.nex
+BEST SCORE FOUND : -54241.161
+Total tree length: 3.699
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.381 sec (0h:0m:0s)
+Total wall-clock time used: 0.384 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                first.iqtree
+  Tree used for ModelFinder:     first.treefile
+  Best partitioning scheme:      first.best_scheme.nex
+           in RAxML format:      first.best_scheme
+  Screen log file:               first.log
+
+ALISIM COMMAND
+--------------
+--alisim simulated_MSA -t first.treefile -p Gene_partitions.txt.best_model.nex
+
+Date and Time: Thu Apr 25 12:05:12 2024
