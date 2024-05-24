@@ -6,11 +6,17 @@ Various methods have been developed to investigate these patterns. We will use [
 
 ASTRAL-IV is a commandline driven program, but works very simply. The input file is a file with all the gene trees that one is interested in, so to do an ASTRAL analysis, we first need to generate gene trees. This can be done with IQ-TREE or MrBayes, or any other program that can generate a phylogenetic tree from DNA data. In principle one could do this one by one for each gene, but that would be tedious if one has a large number of genes (e.g. 100s or 1000s of genes). Fortunately, IQ-TREE has a command that will do this for you automatically, either based on a folder with the individual genes in separate files (Fasta or Phylip format), or based on a concatenated dataset and a gene partition file. 
 
-As the four genes we have been working with are too few to do a proper ASTRAL analysis, we are providing you with alignments of the other 9 protein coding genes and two ribosomal genes. You can find all 15 genes [here](../../Data/input_for_astral) as separate Phylip formatted files. In the folder where you have downloaded IQ-TREE, create a folder called `FelidaeMtgenes` and copy the 15 Phylip files to that folder. Estimating the gene trees is very easy, you just run the command
+As the four genes we have been working with are too few to do a proper ASTRAL analysis, we are providing you with alignments of the other 9 protein coding genes and two ribosomal genes. You can find all 15 genes [here](../../Data/input_for_astral) as separate Phylip formatted files. In your working directory, create a folder called `FelidaeMtgenes` and copy the 15 Phylip files to that folder. Estimating the gene trees is very easy, you just run the command
+
+```
+iqtree -S FelidaeMtgenes --prefix Felidaeloci -T AUTO
+```
+or this one if you're running this on your own computer
 
 ```
 ./iqtree2 -S FelidaeMtgenes --prefix Felidaeloci -T AUTO
 ```
+
 After a couple of minutes you should have a number of files with the name `Felidaeloci.*`. The file we are interested in is `Felidaeloci.treefile`, which should have 15 trees in it (one tree for each gene). You can open this file in **FigTree**, and flip through the different trees by clicking on the arrows on the top right (see red rectangle below) in the program. *Do they all look like they have the same topology?* If you look very carefully, you will notice some trees are missing one or two species. This is because that particular gene was missing from the mitochondrial genome data, perhaps because the quality of the sequence was not good.
 
 <p align="center"><img src="./FigTree15trees.png" alt="15 trees" width="800"></p>
