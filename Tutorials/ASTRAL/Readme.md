@@ -24,8 +24,15 @@ After a couple of minutes you should have a number of files with the name `Felid
 The next thing to do is to make sure you have the `Felidaeloci.treefile` file in your working directory. Then go to that directory in your terminal and put in the following commands:
 
 ```
+astral4 -o FelidaeASTRAL.tre Felidaeloci.treefile
+```
+
+or copy the `Felidaeloci.treefile` to where you have the ASTER program installed, and run this one below **if you're running this on your own computer**
+
+```
 ./astral4 -o FelidaeASTRAL.tre Felidaeloci.treefile
 ```
+
 If you are a Windows user and cannot successfully run the above command, try using the `\` character instead of `/`.
 
 The command -o is used to designate the output file, which you should name `FelidaeASTRAL.tre` and this is followed by the input file `Felidaeloci.treefile`.
