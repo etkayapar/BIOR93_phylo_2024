@@ -1,0 +1,3 @@
+*.p linguist-detectable=false
+*.t linguist-detectable=false
+*.tre linguist-detectable=false
