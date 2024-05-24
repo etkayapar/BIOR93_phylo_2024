@@ -23,11 +23,3 @@ Most likely we would like to report bootstrap and other support values on our tr
 <p align="center"><img src="./IQTREEsupport.png" alt="IQTREEsupport" width="600"></p>
 
 There are various other things you can do in **FigTree**, e.g. make the branches thicker, change the tree style, change the place of the tip labels, expand the tree, increase/decrease font sizes, etc. Play around a bit with the options. To further spice up your figure, e.g. to add pictures of the taxa in the tree, you can export the tree as a pdf file and import it into a graphics program like Adobe Illustrator, InkScape or even PowerPoint.
-
-## Time trees
-
-There are some extra options for time trees. Open your BEAST2 tree in **FigTree**. You can do the same things as above, e.g. colour the clades, etc. In addition, you can add a time scale to the bottom of the tree. Go to the `Scale Axis` tab on the left, tick it and choose the option *Reverse axis* as well. Your tree should look like this:
-
-<p align="center"><img src="./BEASTtree.png" alt="BEASTtree" width="600"></p>
-
-Again, to further spice up the tree, e.g. putting in geological periods, export the tree as a pdf and open in a graphics program of your choice.
