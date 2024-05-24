@@ -21,7 +21,7 @@ After a couple of minutes you should have a number of files with the name `Felid
 
 <p align="center"><img src="./FigTree15trees.png" alt="15 trees" width="800"></p>
 
-The next thing to do is to copy the `Felidaeloci.treefile` file into the same directory where you have your ASTRAL-IV program. Then go to that directory in your terminal and put in the following commands:
+The next thing to do is to make sure you have the `Felidaeloci.treefile` file in your working directory. Then go to that directory in your terminal and put in the following commands:
 
 ```
 ./astral4 -o FelidaeASTRAL.tre Felidaeloci.treefile
